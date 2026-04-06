@@ -1,0 +1,182 @@
+@define-color background #282c34;
+@define-color foreground rgba(255, 255, 255, 0.9);
+
+* {
+  border: none;
+  border-radius: 1;
+  min-height: 0;
+  font-family: 'Maple Mono NF';
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.modules-left {
+  margin-left: 8px;
+}
+
+.modules-right {
+  margin-right: 8px;
+}
+
+window#waybar {
+  background-color: @background;
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 32px;
+}
+
+window#waybar.empty #window {
+  background: transparent;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+#waybar.empty .modules-center {
+  opacity: 0;
+}
+
+#workspaces {
+  padding: 0px 10px 0 5px;
+  margin: 3.5px 10px;
+  border-radius: 18px;
+  /* background-color: alpha(@foreground, 0.1); */
+  background-color: transparent;
+  opacity: 0.95;
+}
+
+#workspaces button {
+  color: @foreground;
+  border-radius: 50%;
+  margin: 7px;
+  padding: 0 6px;
+  min-width: 10px;
+  background-color: transparent;
+}
+
+#workspaces button.empty {
+  color: @foreground;
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+#workspaces button.active {
+  transition: all 50ms ease-out;
+  border-radius: 50%;
+  color: @background;
+  opacity: 1;
+  background-color: transparent;
+}
+
+#workspaces button.active:hover {
+  color: @foreground;
+  background-color: transparent;
+}
+
+#workspaces button:hover {
+  color: alpha(@foreground, 0.3);
+  background: transparent;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#workspaces button.empty:hover {
+  border-radius: 18px;
+  opacity: 1;
+  background-color: transparent;
+}
+
+#battery,
+#pulseaudio {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#tray {
+  background: alpha(@foreground, 0.0);
+  border-radius: 16px;
+  padding: 0px 5px;
+  margin: 3.5 2px;
+  margin-right: 4px;
+}
+
+#clock {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#pulseaudio {
+  margin-right: 5px;
+}
+
+#bluetooth {
+  margin-right: 12px;
+}
+
+#network {
+  margin-right: 9px;
+}
+
+#custom-gamemode {
+  margin-right: 8px;
+}
+
+tooltip {
+  background: @background;
+  border: 1px solid alpha(@foreground, 0.2);
+  border-radius: 4px 4px 11px 11px;
+}
+
+tooltip label {
+  color: white;
+}
+
+#custom-active_window {
+  padding: 3px 6px;
+  border-radius: 14px;
+  background: @background;
+  font-size: 12px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#custom-launcher {
+  background: alpha(@foreground, 0.1);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px 5px 5px 0;
+  min-width: 2em;
+}
+
+#cpu,
+#memory {
+  font-size: 18px;
+  padding: 2px 1px;
+}
+
+#group-right1,
+#group_right1,
+#right1 {
+  font-weight: 800;
+  background: transparent;
+  padding: 0px 5px;
+  margin: 3.5 2px;
+}
+
+#group-center3,
+#group_center3,
+#center3,
+#group-center2,
+#group_center2,
+#center2 {
+  font-weight: 800;
+  background: alpha(@foreground, 0.08);
+  border-radius: 33px;
+  padding: 0px 5px 0 10px;
+  margin: 3.5 2px;
+}
