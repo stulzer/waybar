@@ -40,6 +40,7 @@
       "custom/separator#dot",
       "custom/separator#blank",
       "pulseaudio",
+      "custom/monitor",
       "bluetooth",
       "network",
       "battery",
@@ -192,5 +193,14 @@
     "return-type": "json",
     "tooltip": true,
     "tooltip-format": "GameMode"
+  },
+
+  "custom/monitor": {
+    "exec": "test -f /tmp/hypr_monitor_edp1_disabled && echo '{\"text\":\"󰌢\"}' || echo '{\"text\":\"󰛧\"}'",
+    "on-click": "test -f /tmp/hypr_monitor_edp1_disabled && (rm /tmp/hypr_monitor_edp1_disabled && hyprctl keyword monitor 'eDP-1, 1920x1080@360, auto, 1') || (touch /tmp/hypr_monitor_edp1_disabled && hyprctl keyword monitor 'eDP-1, disabled')",
+    "interval": 1,
+    "return-type": "json",
+    "tooltip": true,
+    "tooltip-format": "Toggle laptop monitor"
   }
 }

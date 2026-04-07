@@ -112,6 +112,10 @@ window#waybar.empty #window {
   margin-right: 5px;
 }
 
+#custom-monitor {
+  margin-right: 17px;
+}
+
 #bluetooth {
   margin-right: 12px;
 }
@@ -151,7 +155,7 @@ tooltip label {
   font-size: 9px;
   margin: 4px 5px 4px -4px;
   min-width: 2em;
-  padding: 3px 9px 3px 6px;
+  padding: 3px 8px 3px 6px;
 }
 
 #cpu,
