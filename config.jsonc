@@ -3,7 +3,7 @@
   "layer": "top",
   "position": "top",
   "spacing": 0,
-  "height": 35,
+  "height": 28,
   "border-radius": 25,
   "margin-right": 16,
   "margin-left": 16,
@@ -51,7 +51,7 @@
   // MODULES
 
   "custom/launcher": {
-    "format": "<span size='11500'>󱢇</span>",
+    "format": "<span size='10000'>󱢇</span>",
     "on-click": "walker",
     "on-click-right": "kitty",
     "tooltip-format": "App Launcher\n\nSuper + R"
