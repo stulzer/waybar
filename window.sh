@@ -16,7 +16,7 @@ print_status() {
         esc_top=$(sed 's/&/&amp;/g; s/</&lt;/g; s/>/&gt;/g' <<< "$top_line")
         esc_bottom=$(sed 's/&/&amp;/g; s/</&lt;/g; s/>/&gt;/g' <<< "$bottom_line")
 
-        text="<span size='7500' foreground='#a6adc8' rise='-2000'>$esc_top</span>
+        text="<span size='7500' foreground='#a6adc8'>$esc_top</span>
 <span size='9000' weight='bold' foreground='#ffffff'>$esc_bottom</span>"
 
         jq -nc \
@@ -45,7 +45,7 @@ print_status() {
     esc_top=$(sed 's/&/&amp;/g; s/</&lt;/g; s/>/&gt;/g' <<< "$class")
     esc_bottom=$(sed 's/&/&amp;/g; s/</&lt;/g; s/>/&gt;/g' <<< "$title")
 
-    text="<span size='7500' foreground='#a6adc8' rise='-2000'>$esc_top</span>
+    text="<span size='7500' foreground='#a6adc8'>$esc_top</span>
 <span size='9000' weight='bold' foreground='#ffffff'>$esc_bottom</span>"
 
     tooltip="$class: $title"
