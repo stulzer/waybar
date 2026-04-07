@@ -5,9 +5,10 @@
   "spacing": 0,
   "height": 35,
   "border-radius": 25,
-  "margin-right": 10,
-  "margin-left": 10,
-  "margin-top": 2,
+  "margin-right": 16,
+  "margin-left": 16,
+  "margin-top": 10,
+  "margin-bottom": -8,
   "modules-left": ["custom/launcher", "custom/active_window"],
   "modules-center": ["group/center3", "hyprland/workspaces", "group/center2"],
   "modules-right": ["group/right1"],
@@ -41,7 +42,9 @@
       "pulseaudio",
       "bluetooth",
       "network",
-      "battery"
+      "battery",
+      "custom/separator#blank",
+      "custom/power"
     ]
   },
 
@@ -174,6 +177,12 @@
     "format": " ",
     "interval": "once",
     "tooltip": false
+  },
+
+  "custom/power": {
+    "format": "<span size='11500'>⏻</span>",
+    "on-click": "walker -m menus:power",
+    "tooltip-format": "Power Menu"
   },
 
   "custom/gamemode": {
