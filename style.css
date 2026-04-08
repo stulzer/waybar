@@ -125,6 +125,10 @@ window#waybar.empty #window {
   margin-right: 9px;
 }
 
+#custom-updates {
+  margin: 0 10px;
+}
+
 #custom-gamemode {
   margin: 0 18px 0 10px;
 }

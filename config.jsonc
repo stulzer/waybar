@@ -20,6 +20,7 @@
     "modules": [
       "clock",
       "custom/separator#dot",
+      "custom/updates",
       "custom/gamemode"
     ]
   },
@@ -183,6 +184,14 @@
     "format": "<span size='11500'>⏻</span>",
     "on-click": "walker -m menus:power",
     "tooltip-format": "Power Menu"
+  },
+
+  "custom/updates": {
+    "exec": "~/.config/waybar/scripts/check-updates.sh",
+    "interval": 600,
+    "return-type": "json",
+    "tooltip": true,
+    "on-click": "kitty sh -c 'sudo pacman -Syu'"
   },
 
   "custom/gamemode": {
