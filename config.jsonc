@@ -19,6 +19,7 @@
     "orientation": "inherit",
     "modules": [
       "clock",
+      "custom/separator#dot",
       "custom/gamemode"
     ]
   },
@@ -28,7 +29,7 @@
     "modules": [
       "cpu",
       "memory",
-      "custom/separator#blank",
+      "custom/separator#dot",
       "custom/media"
     ]
   },
@@ -36,8 +37,6 @@
   "group/right1": {
     "orientation": "inherit",
     "modules": [
-      "custom/separator#blank",
-      "custom/separator#dot",
       "custom/separator#blank",
       "pulseaudio",
       "custom/monitor",
@@ -175,7 +174,7 @@
   },
 
   "custom/separator#dot": {
-    "format": " ",
+    "format": "󰇙",
     "interval": "once",
     "tooltip": false
   },
@@ -187,7 +186,7 @@
   },
 
   "custom/gamemode": {
-    "exec": "test -f ~/.cache/hypr_gamemode && echo '{\"text\":\"\"}' || echo '{\"text\":\"\"}'",
+    "exec": "test -f ~/.cache/hypr_gamemode && echo '{\"text\":\"󰊴\"}' || echo '{\"text\":\"󰊵\"}'",
     "on-click": "test -f ~/.cache/hypr_gamemode && (rm ~/.cache/hypr_gamemode && hyprctl keyword animations:enabled 1 && hyprctl keyword decoration:blur:enabled 1) || (touch ~/.cache/hypr_gamemode && hyprctl keyword animations:enabled 0 && hyprctl keyword decoration:blur:enabled 0)",
     "interval": 1,
     "return-type": "json",
