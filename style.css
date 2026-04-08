@@ -130,7 +130,12 @@ window#waybar.empty #window {
 }
 
 #custom-gamemode {
-  margin: 0 18px 0 10px;
+  margin: 0 18px 0 5px;
+  font-size: 18px;
+}
+
+#custom-updates {
+  font-size: 16px;
 }
 
 tooltip {
