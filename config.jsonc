@@ -147,17 +147,17 @@
   },
 
   "pulseaudio": {
-    "format": "<span size='11500'>{icon}</span>",
+    "format": "<span size='12000'>{icon}</span>",
     "on-click": "pavucontrol",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
-    "format-muted": "",
+    "format-muted": "",
     "format-icons": {
       "default": [
-        " ",
-        " ",
-        " "
+        "",
+        "",
+        ""
       ]
     }
   },
