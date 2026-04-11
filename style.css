@@ -93,6 +93,38 @@ window#waybar.empty #window {
 #pulseaudio {
   min-width: 12px;
   margin: 0 7.5px;
+  transition: all 250ms ease-out;
+}
+
+#custom-colorpicker {
+  margin: 1px 10px 0 0;
+}
+
+#custom-gamemode, #custom-updates,
+#cpu, #memory,
+#network,
+#bluetooth,
+#custom-monitor,
+#custom-colorpicker,
+#pulseaudio {
+  transition: all 250ms ease-out;
+}
+
+#custom-gamemode:hover, #custom-updates:hover,
+#cpu:hover, #memory:hover,
+#custom-notification:hover,
+#custom-colorpicker:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#custom-monitor:hover,
+#pulseaudio:hover {
+  color: #2ec5e7;
+}
+
+#custom-launcher:hover,
+#custom-power:hover {
+  color: #bf616a;
 }
 
 #tray {
@@ -166,6 +198,7 @@ tooltip label {
   margin: 4px 5px 4px -4px;
   min-width: 2em;
   padding: 3px 8px 3px 6px;
+  transition: all 250ms ease-out;
 }
 
 #cpu,
@@ -201,8 +234,16 @@ tooltip label {
   padding: 3px;
   margin: 3px 0 3px -3px;
   min-width: 2em;
+  transition: all 250ms ease-out;
 }
 
 #custom-media {
   font-size: 11px;
+}
+
+#custom-notification {
+  font-size: 13px;
+  margin-right: 18px;
+  margin-left: 5px;
+  transition: all 250ms ease-out;
 }

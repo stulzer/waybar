@@ -39,11 +39,13 @@
     "orientation": "inherit",
     "modules": [
       "custom/separator#blank",
+      "custom/colorpicker",
       "pulseaudio",
       "custom/monitor",
       "bluetooth",
       "network",
       "battery",
+      "custom/notification",
       "custom/separator#blank",
       "custom/power"
     ]
@@ -162,6 +164,12 @@
     }
   },
 
+  "custom/colorpicker": {
+    "format": "<span size='11000'></span>",
+    "on-click": "hyprpicker -a",
+    "tooltip-format": "Color Picker"
+  },
+
   "custom/media": {
     "exec": "title=$(playerctl metadata title 2>/dev/null); if [ -n \"$title\" ]; then echo \"  ${title:0:25} \"; else echo \"         No media           \"; fi",
     "interval": 2,
@@ -201,6 +209,27 @@
     "return-type": "json",
     "tooltip": true,
     "tooltip-format": "GameMode"
+  },
+
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂚",
+      "dnd-notification": "󱏧",
+      "dnd-none": "󱏨",
+      "inhibited-notification": "󱅫",
+      "inhibited-none": "󰂚",
+      "dnd-inhibited-notification": "󱏧",
+      "dnd-inhibited-none": "󱏨"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
   },
 
   "custom/monitor": {
