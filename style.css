@@ -172,7 +172,7 @@ window#waybar.empty #window {
 
 tooltip {
   background: @background;
-  border: 2px solid @border;
+  border: 2px solid #29ccdd;
   border-radius: 4px 4px 11px 11px;
 }
 

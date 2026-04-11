@@ -57,7 +57,7 @@
     "format": "<span size='10000'>󱢇</span>",
     "on-click": "walker",
     "on-click-right": "kitty",
-    "tooltip-format": "App Launcher\n\nSuper + R"
+    "tooltip-format": "App Launcher\n\nCtrl + Space"
   },
 
   "custom/active_window": {
