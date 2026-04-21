@@ -199,7 +199,7 @@
     "interval": 600,
     "return-type": "json",
     "tooltip": true,
-    "on-click": "kitty sh -c 'sudo pacman -Syu'"
+    "on-click": "kitty sh -c 'sudo pacman -Syu && paru -Sua'"
   },
 
   "custom/gamemode": {
