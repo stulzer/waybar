@@ -21,7 +21,7 @@
       "clock",
       "custom/separator#dot",
       "custom/updates",
-      "custom/gamemode"
+      "custom/heroic"
     ]
   },
 
@@ -202,13 +202,10 @@
     "on-click": "kitty sh -c 'sudo pacman -Syu && paru -Sua'"
   },
 
-  "custom/gamemode": {
-    "exec": "test -f ~/.cache/hypr_gamemode && echo '{\"text\":\"󰊴\"}' || echo '{\"text\":\"󰊵\"}'",
-    "on-click": "test -f ~/.cache/hypr_gamemode && (rm ~/.cache/hypr_gamemode && hyprctl keyword animations:enabled 1 && hyprctl keyword decoration:blur:enabled 1) || (touch ~/.cache/hypr_gamemode && hyprctl keyword animations:enabled 0 && hyprctl keyword decoration:blur:enabled 0)",
-    "interval": 1,
-    "return-type": "json",
-    "tooltip": true,
-    "tooltip-format": "GameMode"
+  "custom/heroic": {
+    "format": "<span size='12500'>󱢾</span>",
+    "on-click": "heroic",
+    "tooltip-format": "Heroic Games Launcher"
   },
 
   "custom/notification": {

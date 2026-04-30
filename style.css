@@ -100,7 +100,7 @@ window#waybar.empty #window {
   margin: 1px 10px 0 0;
 }
 
-#custom-gamemode, #custom-updates,
+#custom-heroic, #custom-updates,
 #cpu, #memory,
 #network,
 #bluetooth,
@@ -110,7 +110,7 @@ window#waybar.empty #window {
   transition: all 250ms ease-out;
 }
 
-#custom-gamemode:hover, #custom-updates:hover,
+#custom-heroic:hover, #custom-updates:hover,
 #cpu:hover, #memory:hover,
 #custom-notification:hover,
 #custom-colorpicker:hover,
@@ -161,7 +161,7 @@ window#waybar.empty #window {
   margin: 0 10px;
 }
 
-#custom-gamemode {
+#custom-heroic {
   margin: 0 18px 0 5px;
   font-size: 18px;
 }

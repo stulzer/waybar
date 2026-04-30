@@ -13,7 +13,7 @@ modules-left
 [Launcher | Active Window]
 
 modules-center
-[CPU MEM | Media]  [Workspaces]  [Clock | Updates | GameMode]
+[CPU MEM | Media]  [Workspaces]  [Clock | Updates | Heroic]
 
 modules-right
 [Audio Monitor BT Network Battery | Power]
@@ -30,7 +30,7 @@ modules-right
 | **Workspaces** | 8 persistent Hyprland workspaces |
 | **Clock** | 12h time, date, and calendar tooltip |
 | **Updates** | Available pacman updates via `scripts/check-updates.sh` |
-| **GameMode** | Toggles Hyprland animations and blur |
+| **Heroic** | Launches Heroic Games Launcher on click |
 | **PulseAudio** | Volume icon, click opens pavucontrol |
 | **Monitor Toggle** | Enables/disables laptop display (eDP-1) via `scripts/monitor-toggle.sh` |
 | **Bluetooth** | Status icon, click opens Blueman |
@@ -51,7 +51,7 @@ modules-right
 | Package | Purpose |
 |---|---|
 | [waybar](https://github.com/Alexays/Waybar) | Status bar |
-| [hyprland](https://hyprland.org) | Wayland compositor (workspaces, active window, gamemode) |
+| [hyprland](https://hyprland.org) | Wayland compositor (workspaces, active window) |
 | [jq](https://jqlang.github.io/jq/) | JSON processing in `window.sh` |
 
 ### Fonts
@@ -73,6 +73,7 @@ modules-right
 | [nm-connection-editor](https://wiki.gnome.org/Projects/NetworkManager) | NetworkManager connection editor |
 | [playerctl](https://github.com/altdesktop/playerctl) | MPRIS media player control |
 | [pacman-contrib](https://gitlab.archlinux.org/pacman/pacman-contrib) | Provides `checkupdates` for the updates module |
+| [heroic-games-launcher](https://heroicgameslauncher.com) | Game launcher (Epic, GOG, Amazon) |
 
 ### Arch Linux install
 
