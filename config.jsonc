@@ -230,11 +230,9 @@
   },
 
   "custom/monitor": {
-    // "exec": "test -f /tmp/hypr_monitor_edp1_disabled && echo '{\"text\":\"<U+F0322>\"}' || echo '{\"text\":\"<U+F06E7>\"}'",
-    // "on-click": "test -f /tmp/hypr_monitor_edp1_disabled && (rm /tmp/hypr_monitor_edp1_disabled && hyprctl keyword monitor 'eDP-1, 1920x1080@360, auto, 1') || (touch /tmp/hypr_monitor_edp1_disabled && hyprctl keyword monitor 'eDP-1, disabled')",
     "exec": "~/.config/waybar/scripts/monitor-toggle.sh status",
     "on-click": "~/.config/waybar/scripts/monitor-toggle.sh toggle",
-    "interval": 1,
+    "signal": 8,
     "return-type": "json",
     "tooltip": true,
     "tooltip-format": "Toggle laptop monitor"
