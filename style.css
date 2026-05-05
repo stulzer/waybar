@@ -20,11 +20,10 @@
 }
 
 window#waybar {
-  background-color: @background;
+  background-color: transparent;
   transition-property: background-color;
   transition-duration: .5s;
-  border-radius: 32px;
-  border: 2px solid @border;
+  border-radius: 0;
 }
 
 window#waybar.empty #window {
@@ -195,10 +194,16 @@ tooltip label {
   background: alpha(@foreground, 0.1);
   border-radius: 50%;
   font-size: 9px;
-  margin: 4px 5px 4px -4px;
-  min-width: 2em;
-  padding: 3px 8px 3px 6px;
+  margin: 4px 10px 4px 0;
+  min-width: 20px;
+  padding: 3px 6px 3px 4px;
   transition: all 250ms ease-out;
+}
+
+#custom-launcher:hover {
+  background: #f00;
+  color: #fc0;
+  font-weight: bold;
 }
 
 #cpu,
